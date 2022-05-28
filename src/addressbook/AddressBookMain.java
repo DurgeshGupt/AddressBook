@@ -43,28 +43,8 @@ public class AddressBookMain {
                     }
                     System.out.println("--------------");
                     break;
-                case 3:
-                    boolean found = false;
-                    System.out.println("enter emPhone to search");
-                    String name1 = sc.nextLine();
-
-                    System.out.println("----------------");
-                    i = ob.iterator();
-                    while(i.hasNext()) {
-                        Person z = i.next();
-                        if (z.getName() == name1) {
-                            i.remove();
-                            found = true;
-                        }
-                    }
-                    if (!found) {
-                        System.out.println("record not found");
-                    }else
-                        System.out.println("Record  Deleated Succesfully");
 
 
-                    System.out.println("--------------");
-                    break;
 
 
             }
